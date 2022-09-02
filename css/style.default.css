@@ -91,11 +91,70 @@ section {
 .text-500 {
   font-weight: 500 !important;
   margin-bottom: 0px;
+  
+}
+.side-font{
+  position: fixed;
+  font-weight: 400vw !important;
+  left: -23%;
+  font-size:2vw;
+  top: 41%;
+  right:100%;
+  bottom:59%;
+  
+}
+@media (max-width: 767.98px) {
+  .side-font {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
-.typed {
-  color: #00ff00;
-  background-color: #000000;
+.ac {
+  position:relative; /*relative to the position it had in the line*/
+  top:-2em; /*move up exactly one line*/
+  width:0px; /*don't keep the width in the original line*/
+  display:inline-block; /*dont add a line break*/
+  white-space: nowrap; 
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap");
+
+body .typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+body .typing-container #feature-text {
+  margin-left: 8px;
+  background-color: #000;
+  color:#00ff00;
+}
+body .typing-container .input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .title {
